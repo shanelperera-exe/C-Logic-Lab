@@ -20,12 +20,7 @@ int main(void) {
 }
 
 void swap(int *a, int *b) {
-    int original_a, original_b;
-
-    original_a = *a;
-    original_b = *b;
-
-    int temp = original_a;
-    *a = original_b;
+    int temp = *a;
+    *a = *b;
     *b = temp;
 }
